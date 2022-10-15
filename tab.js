@@ -38,7 +38,6 @@ class Tab{
         }
     }
     addTab(){
-        console.log(this);
         that.clearClass()
         var li=`<li class="liActive"><span>新选项卡</span><div class="close">x</div></li>`
         var section=`<section class="secActive">新选项卡</section>`
@@ -49,7 +48,6 @@ class Tab{
     closeTab(e){
         e.stopPropagation()
         var index=this.parentNode.index
-        console.log(index);
         that.lis[index].remove()
         that.sections[index].remove()
         that.init()
@@ -57,9 +55,8 @@ class Tab{
         that.lis[--index]&&that.lis[index].click()
     }
     editTab(){
-        console.log('this:',this);
         window.Selection?window.getSelection().removeAllRanges():document.selection.empty()
-        content==''?content=this.innerHTML:content='未命名'
+        content=this.innerHTML
         this.innerHTML=`<input type="text" />`
         var input =this.children[0]
         input.value=content
