@@ -1,23 +1,22 @@
 *{
-    background-color: pink;
+    background-color: skyblue;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 .tab{
-    width: 600px;
-    height: 400px;
+    width: 80%;
+    height: 80%;
     border: 2px solid green;
     position: fixed;
-    left: 100px;
-    top: 150px;
-    background-color: #fff;
+    left: 10%;
+    top: 10%;
 }
 .tabHead{
-    background-color: #fff;
     display: flex;
     width: 100%;
     height: 10%;
+    border-bottom: 1px solid #000;
 }
 .tabBody{
     width: 100%;
@@ -28,15 +27,16 @@ ul{
     width: 100%;
     list-style: none;
     display: flex;
-    border-bottom: 1px solid #000;
 }
 .add{
-    float: right;
+    position: relative;
+    right: 10px;
+    top: 10px;
     border-left: 1px solid #000;
     width: 30px;
-    height: 100%;
-    padding: 10px 8px 10px;
-    background-color: skyblue;
+    height: 30px;
+    padding: 5px 8px;
+    background-color: red;
 }
 li>span{
     display: block;
@@ -44,6 +44,7 @@ li>span{
     height: calc(100% + 1px);
     padding: 2px 15px 2px;
     border-right: 1px solid #000;
+    line-height: 300%;
 }
 .liActive>span{
     border-bottom: 0;
@@ -74,6 +75,17 @@ li{
     height: 18px;
     color: #fff;
     font-size: 0.5px;
+}
+section{
+    position: relative;
+    left: 5%;
+    top: 5%;
+    display: block;
+    width: 90%;
+    height: 90%;
+    border: 5px purple solid;
+    border-radius: 6px;
+    font-size: 30px;
 }
 input{
     width: 100px;
